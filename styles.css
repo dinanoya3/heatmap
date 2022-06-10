@@ -1,0 +1,212 @@
+/* BASE CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/* END BASE CSS */
+
+/* font-face */
+@font-face {
+  font-family: Mohave;
+  src: url(assets/mohave-light.woff2), url(assets/mohave-light.woff);
+}
+@font-face {
+  font-family: Mohave;
+  font-weight: 700;
+  src: url(assets/mohave-bold.woff2), url(assets/mohave-bold.woff);
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/* css variables */
+:root {
+  --background: #f6f1ea;
+  --text-color: #1a1a1a;
+}
+
+body {
+  font-family: Mohave;
+  font-size: 1rem;
+  line-height: 1.2;
+  background-color: var(--background);
+  color: var(--text-color);
+  margin: 160px auto 80px auto;
+  width: 800px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  max-width: 30%;
+  background-image: url(assets/temp.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-left: 2em;
+}
+
+select {
+  border: 2px solid var(--text-color);
+  background: none;
+  font-weight: 700;
+  width: 3em;
+  height: 2.7em;
+}
+
+text {
+  fill: var(--text-color);
+}
+text.city {
+  font-size: 32px;
+  font-weight: 700;
+}
