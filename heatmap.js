@@ -123,24 +123,8 @@ dataPoints
   });
 
 // change value of temperatures depending on units (C/F) selection
-// const selectTag = document.querySelector("select");
-// selectTag.addEventListener("input", function () {
-//   if (this.value === "c") {
-//     temperatures.text((d, i) => {
-//       return d;
-//     });
-//   } else {
-//     temperatures.text((d, i) => {
-//       return Math.round(d * 1.8 + 32); //OR use scale
-//       // return unitScale(d);
-//     });
-//   }
-// });
-
-// WITH ARROW FUNCTION
-// change value of temperatures depending on units (C/F) selection
 const selectTag = document.querySelector("select");
-selectTag.addEventListener("input", () => {
+selectTag.addEventListener("input", function () {
   if (this.value === "c") {
     temperatures.text((d, i) => {
       return d;
@@ -152,3 +136,19 @@ selectTag.addEventListener("input", () => {
     });
   }
 });
+
+// WITH ARROW FUNCTION
+// change value of temperatures depending on units (C/F) selection
+// const selectTag = document.querySelector("select");
+// selectTag.addEventListener("input", () => {
+//   if (this.value === "c") {
+//     temperatures.text((d, i) => {
+//       return d;
+//     });
+//   } else {
+//     temperatures.text((d, i) => {
+//       return Math.round(d * 1.8 + 32); //OR use scale
+//       // return unitScale(d);
+//     });
+//   }
+// });
