@@ -178,17 +178,25 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 40px 60px;
+  padding: 40px 50px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.title {
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  transform: translateY(-500px);
+}
+
 h1 {
   font-size: 1.8rem;
   font-weight: 700;
-  max-width: 30%;
+  max-width: 25%;
   background-image: url(assets/temp.svg);
   background-repeat: no-repeat;
   background-position: 0 50%;
@@ -199,14 +207,53 @@ select {
   border: 2px solid var(--text-color);
   background: none;
   font-weight: 700;
-  width: 3em;
+  width: auto;
   height: 2.7em;
 }
 
+svg {
+  margin-top: 7em;
+}
 text {
   fill: var(--text-color);
+  text-anchor: end;
 }
 text.city {
   font-size: 32px;
+}
+text.temp {
+  text-anchor: middle;
+  dominant-baseline: middle;
+  font-size: 18px;
   font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+circle {
+  fill: var(--text-color);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+path {
+  stroke: var(--text-color);
+  fill: none;
+  transition: opacity 0.5s;
+  /* opacity: 0; */
+  /* stroke-width: 1px; */
+}
+
+g.data-point:hover circle,
+text.temp {
+  opacity: 1;
+}
+g.data-point:hover path {
+  opacity: 0;
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
 }

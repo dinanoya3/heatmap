@@ -4,8 +4,8 @@ https://www.behance.net/gallery/8668939/Mohave-Free-Typefaces
 
 Site colors:
 
-Background: #272727
-White: #ffffff
+Background: #f6f1ea
+Text: #1a1a1a
 
 Color temperatures (ºC to color)
 
@@ -21,7 +21,7 @@ Typography:
 Mohave by Tokotype
 
 Header: 24px at 700 weight
-City: 32px at 700
+City: 32px
 Country: 16px at 400
 Temperature: 18px at 700
 
