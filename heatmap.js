@@ -1,6 +1,7 @@
 const svg = d3.select("svg");
 
 svg.attr("width", 800).attr("height", data.length * 150);
+// svg.attr("viewBox", "0 0 800 150");
 
 // color scale
 const colorScale = d3
